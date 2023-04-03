@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="StyleCSS/style.css">
+    <link rel="stylesheet" href="SwiperCSS/swiper.css">
     <link rel="shortcut icon" href="./Img/healthy-food.png">
     <title>Healthy Switcher</title>
 </head>
 <body id="bodyPage">
+
     <div class="wrapper">
 
         <header class="header">
@@ -50,7 +52,7 @@
 
         <!-- End of the "art-dish" section -->
 
-       <section class="primary">
+        <section class="primary">
             <div class="primary__head">
                 <div class="primary__title">
                     Your <span>Favourite Food</span> Delivered <span>Hot & Fresh</span>
@@ -97,15 +99,123 @@
                     </div>
                 </div>
             </div>
-       </section>
+        </section>
 
-       <!-- End of the "primary" section -->
+        <!-- End of the "primary" section -->
+
+        <section class="about" id="menu">
+            <div class="heading">
+                ABOUT
+                <div class="heading__title">
+                    <h1>The Basics Of Healthy Food</h1>
+                </div>
+            </div>
+            <div class="about__text">
+                In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.
+            </div>
+            <div class="about__container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./Img/picture2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Img/picture3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Img/picture4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Img/picture5.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Img/picture6.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Img/picture7.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Img/picture8.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Img/picture9.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Img/picture10.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- End of the "about" section -->
+
+        <section class="work">
+            <div class="heading">
+                WORK
+                <div class="heading__title">
+                    <h1>How It Works</h1>
+                </div>
+            </div>
+            <div class="work__container">
+                <div class="work__item" id="workItem">
+                    <div class="work__title">
+                        Pick Meals
+                    </div>
+                    <div class="work__line">
+                        <!-- green-line -->
+                    </div>
+                    <div class="work__text">
+                        Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie options.
+                    </div>
+                </div>
+                <div class="work__item" id="workItem">
+                    <div class="work__title">
+                        Choose How Often
+                    </div>
+                    <div class="work__line">
+                        <!-- green-line -->
+                    </div>
+                    <div class="work__text">
+                        Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!
+                    </div>
+                </div>
+                <div class="work__item" id="workItem">
+                    <div class="work__title">
+                        Fast Deliveries
+                    </div>
+                    <div class="work__line">
+                        <!-- green-line -->
+                    </div>
+                    <div class="work__text">
+                        Your freshly prepped 15-min dinner kits arrive on your doorstep in a refrigerated box.
+                    </div>
+                </div>
+                <div class="work__item" id="workItem">
+                    <div class="work__title">
+                        Tasty Meals
+                    </div>
+                    <div class="work__line">
+                        <!-- green-line -->
+                    </div>
+                    <div class="work__text">
+                        Gobble makes cooking fast, so you have more time to unwind and be with family.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End of the "work" section -->
 
        
         
 
     </div>
 
+    <script src="SwiperJS/swiper.js"></script>
     <script src="JQuery/JQuery.js"></script>
     <script src="JavaScript/script.js"></script>
 </body>
