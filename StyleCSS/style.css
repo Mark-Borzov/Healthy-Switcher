@@ -40,7 +40,7 @@ body{
 .header__body{
     max-width: 1400px;
     margin: auto;
-    padding: 35px 20px;
+    padding: 40px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,7 +178,7 @@ body{
 
 .primary__button a:hover{
     color: #34C759;
-    box-shadow: 0px 0px 10px #34C759;
+    box-shadow: 0px 0px 15px #34C759;
 }
 
 .primary__button a:before{
@@ -399,65 +399,229 @@ body{
 
 /* End of the "work" section */
 
+.dishes{
+    max-width: 1400px;
+    margin: auto;
+    padding: 110px 20px 110px 20px;
+}
 
+.dishes__container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
+.dishes__floor-1{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
 
+.dishes__floor-2{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
 
+.dishes__item{
+    width: 100%;
+    background: #252525;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+}
 
+.dishes__photo{
+    width: 100%;
+    height: 300px;
+}
 
+.dishes__photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
+.dishes__body{
+    padding: 30px;
+}
 
+.dishes__name{
+    font-size: 35px;
+}
 
+.dishes__description{
+    font-size: 16px;
+    color: #A6A6A6;
+}
 
+.dishes__text{
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #A6A6A6;
+}
 
+.dishes__mark{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
 
+.dishes__rating{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
+.dishes__star{
+    width: 25px;
+    height: 25px;
+}
 
+.dishes__star img{
+    width: 100%;
+}
 
+.dishes__button{
+    width: 140px;
+    height: 55px;
+}
 
+.dishes__button a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #34C759;
+    border: 2px solid  #34C759;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.2s all;
+}
 
+.dishes__button a:hover{
+    color: #34C759;
+    box-shadow: 0px 0px 15px #34C759;
+}
 
+.dishes__button a:before{
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    background-color: #191919;
+    transition: 0.3s;
+    display: block;
+    z-index: -1; 
+}
 
+.dishes__button a:hover:before{
+    width: 100%; 
+}
 
+/* End of the "dishes" section */
 
+.chefs{
+    max-width: 1400px;
+    margin: auto;
+    padding: 110px 20px 110px 20px;
+}
 
+.chefs__container{
+    margin-top: 100px; 
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
+.chefs__description{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
 
+.chefs__item{
+    display: flex;
+    gap: 20px;
+}
 
+.chefs__picture{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
+.chefs__picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
+.chefs__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
 
+.chefs__initials{
+    color: white;
+    font-size: 25px;
+}
 
+.chefs__position{
+    color: #A6A6A6;
+    font-size: 18px;
+}
 
+.chefs__dishs{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    gap: 50px;
+}
 
+.chefs__dish-1{
+    width: 200%;
+    height: 100%;
+}
 
+.chefs__dish-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
+.chefs__dish-2{
+    width: 100%;
+    height: 100%;
+}
 
+.chefs__dish-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* End of the "chefs" section */
 
 
 
@@ -515,15 +679,15 @@ body{
 
 /* Scroll Styling */
 ::-webkit-scrollbar{
-   
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track{
-    
+    background-color: #191919;
 }
 
 ::-webkit-scrollbar-thumb{
-    
+    background-color: #34C759;
 }
 
 
@@ -582,6 +746,30 @@ body{
 
     .heading__title{
         font-size: calc(25px + (10 + 10 * 0.7) * ((100vw - 320px) / 1100));
+    }
+
+    .dishes__text{
+        font-size: calc(18px + 7 * (100vw / 1100));  
+    }
+
+    .dishes__text{
+        font-size: calc(18px + (7 + 7 * 0.7) * ((100vw - 320px) / 1100)); 
+    }
+
+    .dishes__name{
+        font-size: calc(30px + 5 * (100vw / 1100));
+    }
+
+    .dishes__name{
+        font-size: calc(30px + (5 + 5 * 0.7) * ((100vw - 320px) / 1100));
+    }
+
+    .dishes__description{
+        font-size: calc(13px + 3 * (100vw / 1100));
+    }
+
+    .dishes__description{
+        font-size: calc(13px + (3 + 3 * 0.7) * ((100vw - 320px) / 1100));
     }
 
 }
@@ -661,6 +849,68 @@ body{
         font-size: 25px;
         line-height: 35px;
         max-width: 800px;
+    }
+
+    .dishes__floor-1{
+        flex-direction: column;
+    }
+
+    .dishes__floor-2{
+        flex-direction: column;
+    }
+
+    .dishes__text{
+        line-height: 35px;
+    }
+
+    .dishes__photo{
+        height: 400px;
+    }
+
+    .dishes__rating{
+        gap: 8px;
+    }
+
+    .dishes__star{
+        width: 30px;
+        height: 30px;
+    }
+
+    .chefs__description{
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .chefs__item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .chefs__dishs{
+        gap: 0px;
+    }
+
+    .chefs__picture{
+        width: 150px;
+        height: 150px;
+    }
+
+    .chefs__dish-1{
+        width: 100%;
+    }
+
+    .chefs__container{
+        gap: 100px;
+    }
+
+    .chefs__initials{
+        font-size: 32px;
+    }
+
+    .chefs__position{
+        font-size: 22px;
     }
 
 }
@@ -784,6 +1034,11 @@ body{
 
 /* Adaptive Phone */
 @media(max-width: 768px){
+
+    .dishes__mark{
+        flex-direction: column;
+        gap: 30px;
+    }
 
 }
 
