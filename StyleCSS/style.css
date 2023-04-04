@@ -755,6 +755,8 @@ body{
 .chefs__dish-1{
     width: 200%;
     height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .chefs__dish-1 img{
@@ -767,6 +769,8 @@ body{
 .chefs__dish-2{
     width: 100%;
     height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .chefs__dish-2 img{
@@ -1598,6 +1602,11 @@ body{
 
     .chefs__dish-1{
         width: 100%;
+        border-radius: 0px;
+    }
+
+    .chefs__dish-2{
+        border-radius: 0px;
     }
 
     .chefs__container{
